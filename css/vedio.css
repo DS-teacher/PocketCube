@@ -4,8 +4,7 @@ video {
   right: 0px;
   height: 100%;
   /* 背景灰度设置 */
-  /* -webkit-filter: grayscale(50%);
-  filter: grayscale(50%); */
+  filter: grayscale(50%);
   z-index: -11;
 }
 source {
