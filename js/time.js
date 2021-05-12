@@ -3,8 +3,8 @@ Date.prototype.format = function (fmt) {
     "y+": this.getFullYear, //年
     "M+": this.getMonth() + 1, //月份
     "d+": this.getDate(), //日
-    // "h+": this.getHours(), //小时
-    // "m+": this.getMinutes(), //分
+    "h+": this.getHours(), //小时
+    "m+": this.getMinutes(), //分
     // "s+": this.getSeconds() //秒
   };
   if (/(y+)/.test(fmt))
@@ -21,6 +21,6 @@ Date.prototype.format = function (fmt) {
   return fmt;
 };
 setInterval(
-  "document.getElementById('dateTime').innerHTML = (new Date()).format('今天是yyyy年MM月dd日，心情惬意，奖励自己玩一把魔方☕');",
+  "document.getElementById('dateTime').innerHTML = (new Date()).format('现在是yyyy年MM月dd日hh时mm分，心情惬意，奖励自己玩一把魔方☕');",
   1000
 );
