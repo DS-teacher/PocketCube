@@ -52,7 +52,7 @@ body:active {
   width: 15rem;
   overflow: visible;
   top: 24em;
-  left: 35%;
+  left: 38%;
   margin-left: -7.5rem;
   -webkit-perspective: 700px;
   perspective: 700px;
@@ -80,15 +80,12 @@ body:active {
   outline: 0;
 }
 
-button {
-  line-height: 1;
-}
-
 button:focus {
   outline: 0;
 }
 
 button {
+  line-height: 1;
   margin-left: 20px;
   padding: 10px 12px;
   font-size: 10px;
@@ -99,6 +96,8 @@ button {
   border-radius: 4px;
   cursor: pointer;
   font-variant: small-caps;
+  box-shadow: 0 1px 8px rgba(34, 34, 34, 0.3);
+  opacity: 0.87;
 }
 
 button:focus,
@@ -126,7 +125,7 @@ button.selected {
 
 .controls {
   position: absolute;
-  top: 20px;
+  top: 30px;
   right: 40px;
   z-index: 5;
   cursor: default;
