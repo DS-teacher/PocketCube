@@ -1,0 +1,16 @@
+video {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  /* 背景灰度设置 */
+  /* -webkit-filter: grayscale(50%);
+  filter: grayscale(50%); */
+  z-index: -11;
+}
+source {
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
+}
