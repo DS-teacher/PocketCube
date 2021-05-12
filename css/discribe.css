@@ -158,10 +158,16 @@ Posters and still images
 
 .scene .movie .poster {
   background-image: url(../images/poster01.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
 }
 
 .scene .info header {
   background-image: url(../images/still01.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
 }
 
 /*************************************
