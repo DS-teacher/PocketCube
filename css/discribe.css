@@ -10,6 +10,8 @@
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
   perspective: 1000px;
+  box-shadow: 0 1px 8px rgba(34, 34, 34, 0.3),
+    inset 0 1px 8px rgba(34, 34, 34, 0.3);
 }
 
 .movie {
@@ -96,21 +98,20 @@ Movie information
 .info header {
   color: #fff;
   padding: 7px 10px;
+  font-size: 14px;
   font-weight: bold;
   height: 195px;
-  background-size: contain;
-  background-repeat: no-repeat;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
 }
 
-.info header h1 {
-  margin: 0 0 2px;
-  font-size: 1.4em;
+.info .title {
+  margin-bottom: 10px;
 }
 
 .info header .rating {
   border: 1px solid #fff;
-  padding: 0px 3px;
+  padding: 0px 4px;
+  margin: 0px 4px;
 }
 
 .info p {
@@ -159,14 +160,14 @@ Posters and still images
 .scene .movie .poster {
   background-image: url(../images/poster01.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
 }
 
 .scene .info header {
   background-image: url(../images/still01.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
 }
 
