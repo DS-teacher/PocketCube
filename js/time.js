@@ -21,6 +21,6 @@ Date.prototype.format = function (fmt) {
   return fmt;
 };
 setInterval(
-  "document.getElementById('dateTime').innerHTML = (new Date()).format('&nbsp;&nbsp;&nbsp;&nbsp;现在是yyyy年MM月dd日hh时mm分，心情惬意，奖励自己玩一把魔方☕！');",
+  "document.getElementById('dateTime').innerHTML = (new Date()).format('&nbsp;&nbsp;&nbsp;&nbsp;现在是yyyy年MM月dd日hh时mm分，心情惬意☕，奖励自己玩一把魔方！');",
   1000
 );

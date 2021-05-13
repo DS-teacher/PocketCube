@@ -6,12 +6,12 @@
   width: 260px;
   height: 400px;
   margin: 30px;
-  float: left;
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
   perspective: 1000px;
   box-shadow: 0 1px 8px rgba(34, 34, 34, 0.3),
     inset 0 1px 8px rgba(34, 34, 34, 0.3);
+  opacity: 0.87;
 }
 
 .movie {
@@ -23,9 +23,9 @@
   -webkit-transform: translateZ(-130px);
   -moz-transform: translateZ(-130px);
   transform: translateZ(-130px);
-  -webkit-transition: -webkit-transform 350ms;
-  -moz-transition: -moz-transform 350ms;
-  transition: transform 350ms;
+  -webkit-transition: -webkit-transform 300ms;
+  -moz-transition: -moz-transform 300ms;
+  transition: transform 300ms;
 }
 
 .movie:hover {
@@ -53,8 +53,6 @@ Transform and style the two planes
   -webkit-transform: translateZ(130px);
   -moz-transform: translateZ(130px);
   transform: translateZ(130px);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .movie .info {
@@ -97,8 +95,8 @@ Movie information
 
 .info header {
   color: #fff;
-  padding: 7px 10px;
-  font-size: 14px;
+  padding: 20px;
+  font-size: 16px;
   font-weight: bold;
   height: 195px;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
@@ -110,17 +108,18 @@ Movie information
 
 .info header .rating {
   border: 1px solid #fff;
+  border-radius: 4px;
   padding: 0px 4px;
   margin: 0px 4px;
 }
 
 .info p {
-  padding: 1.2em 1.4em;
-  margin: 2px 0 0;
-  font-weight: 700;
+  padding: 20px;
+  font-size: 14px;
+  font-weight: bold;
   color: #666;
-  line-height: 1.4em;
-  border-top: 10px solid #555;
+  line-height: 20px;
+  border-top: 10px solid #666;
 }
 
 /*************************************
@@ -161,7 +160,27 @@ Posters and still images
   background-image: url(../images/poster01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: -130px;
+}
+
+.scene .movie .poster .title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0.97;
+  line-height: 30px;
+  padding: 20px;
+  letter-spacing: 2px;
+}
+
+.scene .movie .poster .discribe {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0.95;
+  line-height: 24px;
+  padding: 60px 10px 10px 10px;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
 }
 
 .scene .info header {
