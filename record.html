@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/logo.png" />
+    <title>WEB口袋魔方游戏</title>
+
+    <link rel="stylesheet" href="./css/css-comment.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/vedio.css" />
+    <link rel="stylesheet" href="./css/left.css" />
+    <link rel="stylesheet" href="./css/discribe.css" />
+    <link rel="stylesheet" href="./css/record.css" />
+    <link rel="stylesheet" href="./css/clock.css" />
+  </head>
+  <body>
+    <!-- 背景视频 -->
+    <video class="lubik-video" autoplay loop muted>
+      <source
+        class="lubik-source"
+        src="./images/LobbyBg.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <!-- 左侧边栏 -->
+    <div class="left-content">
+      <div class="left-content_header">
+        <a href="#">
+          <img src="./images/logo.png" alt="logo" />
+        </a>
+        <div class="container">WEB口袋魔方游戏</div>
+      </div>
+      <div class="left-content_body">
+        <div class="date">
+          <!-- 时钟 -->
+          <div class="is-moment">
+            <header class="hero hero-moment">
+              <div class="hero-circle">
+                <div class="hero-face">
+                  <div id="hour" class="hero-hour"></div>
+                  <div id="minute" class="hero-minute"></div>
+                  <div id="second" class="hero-second"></div>
+                </div>
+              </div>
+            </header>
+          </div>
+          <div id="dateTime"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 右上按钮组 -->
+    <div class="controls">
+      <div class="button-wrapper">
+        <!-- <button type="button" data-theme="flat" class="themer selected">
+            扁平效果
+          </button> -->
+        <!-- <button type="button" data-theme="realistic" class="themer">
+            立体效果
+          </button> -->
+        <button type="button" class="fullScreen">全屏展示</button>
+        <button type="button" class="scrambler">打乱魔方</button>
+        <button type="button" class="restore">复原界面</button>
+        <button type="button">开始计时</button>
+      </div>
+    </div>
+    <!-- 复原用时 -->
+    <div class="record">最快完成纪录： 0 小时 1 分 0 秒，继续加油！</div>
+    <!-- 右侧描述栏 -->
+    <div class="scene">
+      <div class="movie">
+        <div class="poster">
+          <div class="title">魔方简介</div>
+          <div class="discribe">
+            &nbsp;&nbsp;&nbsp;&nbsp;魔方，又叫鲁比克方块，最早是由匈牙利布达佩斯建筑学院厄尔诺·鲁比克教授于1974年发明的机械益智玩具。魔方拥有竞速、盲拧、单拧等多种玩法，风靡程度至今未衰，每年都会举办大小赛事，是最受欢迎的智力游戏之一，与华容道、法国的单身贵族（独立钻石棋）同被称谓智力游戏界的三大不可思议。
+          </div>
+        </div>
+        <div class="info">
+          <header>
+            <div class="title">三阶魔方世界记录</div>
+            <div>2018年11月24日<span class="rating">3.47秒</span></div>
+          </header>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;三阶魔方形状通常是正方体，由有弹性的硬塑料制成，竞速玩法是将魔方打乱，然后在最短的时间内复原。目前，三阶魔方还原官方世界纪录是由中国的杜宇生在2018年11月24日于芜湖赛打破的记录，单次3.47秒。
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/time.js"></script>
+    <script src="./js/moment-with-locales.min.js"></script>
+    <script src="./js/core-home.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
