@@ -1,4 +1,4 @@
-video {
+.lubik-video {
   position: fixed;
   top: 0px;
   right: 0px;
@@ -7,7 +7,7 @@ video {
   filter: grayscale(50%);
   z-index: -11;
 }
-source {
+.lubik-source {
   min-width: 100%;
   min-height: 100%;
   height: auto;

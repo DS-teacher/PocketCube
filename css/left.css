@@ -9,6 +9,7 @@
   background-color: #fff;
   border-right: 1px solid #ddd;
   box-shadow: 4px 4px 10px #ddd;
+  cursor: default;
 }
 
 .left-content_header {
@@ -40,5 +41,4 @@
   line-height: 140%;
   color: rgba(0, 0, 0, 0.87);
   letter-spacing: 1px;
-  cursor: default;
 }
