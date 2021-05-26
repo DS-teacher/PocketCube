@@ -21,7 +21,11 @@
 }
 
 .tr-li {
-  margin: 5px 20px;
+  margin: 5px 30px;
+}
+
+.tr-li:nth-child(4) {
+  margin-left: 25px;
 }
 
 .record-mycribe .td {
@@ -39,5 +43,17 @@
 }
 
 .td-li {
-  margin: 0 18px;
+  margin: 0 25px;
+}
+
+.td-li:nth-child(2) {
+  margin-left: 10px;
+}
+
+.td-li:nth-child(3) {
+  margin-left: 40px;
+}
+
+.td-li:nth-child(4) {
+  margin-left: 60px;
 }
