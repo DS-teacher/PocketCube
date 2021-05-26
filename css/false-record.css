@@ -16,7 +16,12 @@
   font-weight: bold;
   line-height: 52px;
   padding: 0px 20px;
+  display: flex;
   color: #fff;
+}
+
+.tr-li {
+  margin: 5px 20px;
 }
 
 .record-mycribe .td {
@@ -24,10 +29,15 @@
   font-weight: bold;
   line-height: 52px;
   padding: 0px 20px;
+  display: flex;
   color: #fff;
 }
 
 .record-mycribe .td:hover {
   color: #fff;
   background-color: #ccc;
+}
+
+.td-li {
+  margin: 0 18px;
 }
