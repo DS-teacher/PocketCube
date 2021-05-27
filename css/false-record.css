@@ -20,12 +20,14 @@
   color: #fff;
 }
 
-.tr-li {
-  margin: 5px 30px;
+.record-mycribe .tr-li {
+  width: 120px;
+  text-align: center;
+  margin: 5px 10px;
 }
 
-.tr-li:nth-child(4) {
-  margin-left: 25px;
+.record-mycribe .tr-li:nth-child(4) {
+  margin-left: 20px;
 }
 
 .record-mycribe .td {
@@ -42,18 +44,12 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.td-li {
-  margin: 0 25px;
+.record-mycribe .td-li {
+  width: 120px;
+  text-align: right;
+  margin: 0 10px;
 }
 
-.td-li:nth-child(2) {
-  margin-left: 10px;
-}
-
-.td-li:nth-child(3) {
-  margin-left: 40px;
-}
-
-.td-li:nth-child(4) {
-  margin-left: 60px;
+.record-mycribe .td-li:nth-child(4) {
+  text-align: center;
 }

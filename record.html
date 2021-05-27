@@ -1,218 +1,149 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/logo.png" />
+    <title>WEB口袋魔方游戏</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta
-    http-equiv="X-UA-Compatible"
-    content="IE=edge"
-  />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-  <link
-    rel="icon"
-    href="./images/logo.png"
-  />
-  <title>WEB口袋魔方游戏</title>
+    <link rel="stylesheet" href="./css/css-comment.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/vedio.css" />
+    <link rel="stylesheet" href="./css/left.css" />
+    <link rel="stylesheet" href="./css/record.css" />
+    <link rel="stylesheet" href="./css/false-record.css" />
+    <link rel="stylesheet" href="./css/clock.css" />
+  </head>
 
-  <link
-    rel="stylesheet"
-    href="./css/css-comment.css"
-  />
-  <link
-    rel="stylesheet"
-    href="./css/index.css"
-  />
-  <link
-    rel="stylesheet"
-    href="./css/vedio.css"
-  />
-  <link
-    rel="stylesheet"
-    href="./css/left.css"
-  />
-  <link
-    rel="stylesheet"
-    href="./css/record.css"
-  />
-  <link
-    rel="stylesheet"
-    href="./css/false-record.css"
-  />
-  <link
-    rel="stylesheet"
-    href="./css/clock.css"
-  />
-</head>
-
-<body>
-  <!-- 背景视频 -->
-  <video
-    class="lubik-video"
-    autoplay
-    loop
-    muted
-  >
-    <source
-      class="lubik-source"
-      src="./images/LobbyBg.mp4"
-      type="video/mp4"
-    />
-  </video>
-  <!-- 左侧边栏 -->
-  <div class="left-content">
-    <div class="left-content_header">
-      <a href="#">
-        <img
-          src="./images/logo.png"
-          alt="logo"
-        />
-      </a>
-      <div class="container">WEB口袋魔方游戏</div>
-    </div>
-    <div class="left-content_body">
-      <div class="date">
-        <!-- 时钟 -->
-        <div class="is-moment">
-          <header class="hero hero-moment">
-            <div class="hero-circle">
-              <div class="hero-face">
-                <div
-                  id="hour"
-                  class="hero-hour"
-                ></div>
-                <div
-                  id="minute"
-                  class="hero-minute"
-                ></div>
-                <div
-                  id="second"
-                  class="hero-second"
-                ></div>
+  <body>
+    <!-- 背景视频 -->
+    <video class="lubik-video" autoplay loop muted>
+      <source
+        class="lubik-source"
+        src="./images/LobbyBg.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <!-- 左侧边栏 -->
+    <div class="left-content">
+      <div class="left-content_header">
+        <a href="#">
+          <img src="./images/logo.png" alt="logo" />
+        </a>
+        <div class="container">WEB口袋魔方游戏</div>
+      </div>
+      <div class="left-content_body">
+        <div class="date">
+          <!-- 时钟 -->
+          <div class="is-moment">
+            <header class="hero hero-moment">
+              <div class="hero-circle">
+                <div class="hero-face">
+                  <div id="hour" class="hero-hour"></div>
+                  <div id="minute" class="hero-minute"></div>
+                  <div id="second" class="hero-second"></div>
+                </div>
               </div>
-            </div>
-          </header>
+            </header>
+          </div>
+          <div id="dateTime"></div>
         </div>
-        <div id="dateTime"></div>
       </div>
     </div>
-  </div>
-  <!-- 右上按钮组 -->
-  <div class="controls">
-    <div class="button-wrapper">
-      <!-- <button type="button" data-theme="flat" class="themer selected">
+    <!-- 右上按钮组 -->
+    <div class="controls">
+      <div class="button-wrapper">
+        <!-- <button type="button" data-theme="flat" class="themer selected">
             扁平效果
           </button> -->
-      <!-- <button type="button" data-theme="realistic" class="themer">
+        <!-- <button type="button" data-theme="realistic" class="themer">
             立体效果
           </button> -->
-      <button
-        type="button"
-        class="fullScreen"
-      >全屏展示</button>
-    </div>
-  </div>
-  <!-- 复原用时 -->
-  <a
-    href="./index.html"
-    class="record"
-  >最快完成纪录： 0 小时 5 分 22 秒，继续加油！</a>
-  <!-- 仿制表格 -->
-  <div class="record-mycribe">
-    <div class="tr">
-      <div class="tr-li">开始时间</div>
-      <div class="tr-li">用时</div>
-      <div class="tr-li">复原总步数</div>
-      <div class="tr-li">复盘该操作</div>
-    </div>
-    <div class="td">
-      <div class="td-li">2021.5.21</div>
-      <div class="td-li">5分22秒</div>
-      <div class="td-li">109步</div>
-      <div class="td-li">
-        <button type="button">
-          点我复盘
-        </button>
+        <button type="button" class="fullScreen">全屏展示</button>
       </div>
     </div>
-    <div class="td">
-      <div class="td-li">2021.5.23</div>
-      <div class="td-li">5分46秒</div>
-      <div class="td-li">119步</div>
-      <div class="td-li">
-        <button type="button">
-          点我复盘
-        </button>
+    <!-- 复原用时 -->
+    <a href="./index.html" class="record"
+      >最快完成纪录： 0 小时 5 分 22 秒，继续加油！</a
+    >
+    <!-- 仿制表格 -->
+    <div class="record-mycribe">
+      <div class="tr">
+        <div class="tr-li">开始时间</div>
+        <div class="tr-li">用时</div>
+        <div class="tr-li">复原总步数</div>
+        <div class="tr-li">复盘该操作</div>
+      </div>
+      <div class="td">
+        <div class="td-li">2021.5.21</div>
+        <div class="td-li">5分22秒</div>
+        <div class="td-li">109步</div>
+        <div class="td-li">
+          <button type="button">点我复盘</button>
+        </div>
+      </div>
+      <div class="td">
+        <div class="td-li">2021.5.23</div>
+        <div class="td-li">5分46秒</div>
+        <div class="td-li">119步</div>
+        <div class="td-li">
+          <button type="button">点我复盘</button>
+        </div>
+      </div>
+      <div class="td">
+        <div class="td-li">2021.5.25</div>
+        <div class="td-li">5分54秒</div>
+        <div class="td-li">100步</div>
+        <div class="td-li">
+          <button type="button">点我复盘</button>
+        </div>
+      </div>
+      <div class="td">
+        <div class="td-li">2021.5.24</div>
+        <div class="td-li">6分20秒</div>
+        <div class="td-li">130步</div>
+        <div class="td-li">
+          <button type="button">点我复盘</button>
+        </div>
+      </div>
+      <div class="td">
+        <div class="td-li">2021.5.23</div>
+        <div class="td-li">6分22秒</div>
+        <div class="td-li">114步</div>
+        <div class="td-li">
+          <button type="button">点我复盘</button>
+        </div>
+      </div>
+      <div class="td">
+        <div class="td-li">2021.5.23</div>
+        <div class="td-li">8分43秒</div>
+        <div class="td-li">152步</div>
+        <div class="td-li">
+          <button type="button">点我复盘</button>
+        </div>
+      </div>
+      <div class="td">
+        <div class="td-li">2021.5.22</div>
+        <div class="td-li">11分11秒</div>
+        <div class="td-li">161步</div>
+        <div class="td-li">
+          <button type="button">点我复盘</button>
+        </div>
+      </div>
+      <div class="td">
+        <div class="td-li">2021.5.27</div>
+        <div class="td-li">13分6秒</div>
+        <div class="td-li">132步</div>
+        <div class="td-li">
+          <button type="button">点我复盘</button>
+        </div>
       </div>
     </div>
-    <div class="td">
-      <div class="td-li">2021.5.25</div>
-      <div class="td-li">5分54秒</div>
-      <div class="td-li">100步</div>
-      <div class="td-li">
-        <button type="button">
-          点我复盘
-        </button>
-      </div>
-    </div>
-    <div class="td">
-      <div class="td-li">2021.5.24</div>
-      <div class="td-li">6分20秒</div>
-      <div class="td-li">130步</div>
-      <div class="td-li">
-        <button type="button">
-          点我复盘
-        </button>
-      </div>
-    </div>
-    <div class="td">
-      <div class="td-li">2021.5.23</div>
-      <div class="td-li">6分22秒</div>
-      <div class="td-li">114步</div>
-      <div class="td-li">
-        <button type="button">
-          点我复盘
-        </button>
-      </div>
-    </div>
-    <div class="td">
-      <div class="td-li">2021.5.23</div>
-      <div class="td-li">8分43秒</div>
-      <div class="td-li">152步</div>
-      <div class="td-li">
-        <button type="button">
-          点我复盘
-        </button>
-      </div>
-    </div>
-    <div class="td">
-      <div class="td-li">2021.5.22</div>
-      <div class="td-li">11分11秒</div>
-      <div class="td-li">161步</div>
-      <div class="td-li">
-        <button type="button">
-          点我复盘
-        </button>
-      </div>
-    </div>
-    <div class="td">
-      <div class="td-li">2021.5.27</div>
-      <div class="td-li">13分6秒</div>
-      <div class="td-li">132步</div>
-      <div class="td-li">
-        <button type="button">
-          点我复盘
-        </button>
-      </div>
-    </div>
-  </div>
-  <script src="./js/jquery-3.6.0.min.js"></script>
-  <script src="./js/time.js"></script>
-  <script src="./js/moment-with-locales.min.js"></script>
-  <script src="./js/core-home.js"></script>
-  <script src="./js/index.js"></script>
-</body>
-
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/time.js"></script>
+    <script src="./js/moment-with-locales.min.js"></script>
+    <script src="./js/core-home.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
