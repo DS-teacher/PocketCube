@@ -1,3 +1,4 @@
+/* 个人记录 */
 .record-mycribe {
   position: absolute;
   top: 85px;
@@ -29,7 +30,10 @@
 .record-mycribe .tr-li {
   width: 120px;
   text-align: center;
-  margin: 5px 12px;
+  margin: 5px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .record-mycribe .td {
@@ -48,10 +52,70 @@
 
 .record-mycribe .td-li {
   width: 120px;
-  text-align: right;
+  text-align: center;
   margin: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.record-mycribe .td-li:nth-child(4) {
+/* 世界记录 */
+.record-otherscribe {
+  position: absolute;
+  top: 85px;
+  left: 970px;
+  padding-bottom: 10px;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+  box-shadow: 0 1px 8px rgba(34, 34, 34, 0.3),
+    inset 0 1px 8px rgba(34, 34, 34, 0.3);
+  cursor: default;
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 0.94;
+}
+
+.record-otherscribe:hover {
+  box-shadow: 0 2px 10px rgba(34, 34, 34, 0.3),
+    inset 0 2px 10px rgba(34, 34, 34, 0.3);
+  opacity: 1;
+}
+
+.record-otherscribe .tr {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 52px;
+  padding: 0px 20px;
+  display: flex;
+  color: #fff;
+}
+
+.record-otherscribe .tr-li {
+  width: 120px;
   text-align: center;
+  margin: 5px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.record-otherscribe .td {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 52px;
+  padding: 0px 20px;
+  display: flex;
+  color: #fff;
+}
+
+.record-otherscribe .td:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.record-otherscribe .td-li {
+  width: 120px;
+  text-align: center;
+  margin: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
