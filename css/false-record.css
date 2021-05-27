@@ -11,6 +11,12 @@
   opacity: 0.94;
 }
 
+.record-mycribe:hover {
+  box-shadow: 0 2px 10px rgba(34, 34, 34, 0.3),
+    inset 0 2px 10px rgba(34, 34, 34, 0.3);
+  opacity: 1;
+}
+
 .record-mycribe .tr {
   font-size: 24px;
   font-weight: bold;
@@ -23,11 +29,7 @@
 .record-mycribe .tr-li {
   width: 120px;
   text-align: center;
-  margin: 5px 10px;
-}
-
-.record-mycribe .tr-li:nth-child(4) {
-  margin-left: 20px;
+  margin: 5px 12px;
 }
 
 .record-mycribe .td {
