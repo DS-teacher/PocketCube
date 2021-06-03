@@ -70,13 +70,27 @@ body:active {
   outline: 0;
 }
 
+/* 右上按钮组 */
+.controls {
+  position: absolute;
+  top: 30px;
+  right: 45px;
+  z-index: 5;
+  cursor: default;
+  width: 300px;
+}
+
+.controls button {
+  float: right;
+  margin: 0 0 15px 20px;
+}
+
 button:focus {
   outline: 0;
 }
 
 button {
   line-height: 1;
-  margin-left: 20px;
   padding: 10px 12px;
   font-size: 10px;
   background: #4caf50;
@@ -114,13 +128,6 @@ button.selected {
   background-color: #48a770;
 }
 
-.controls {
-  position: absolute;
-  top: 30px;
-  right: 45px;
-  z-index: 5;
-  cursor: default;
-}
 /**
  *   ██████╗██╗   ██╗██████╗ ███████╗███████╗
  *  ██╔════╝██║   ██║██╔══██╗██╔════╝██╔════╝

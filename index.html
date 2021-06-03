@@ -7,13 +7,22 @@
     <link rel="icon" href="./images/rubik-logo.png" />
     <title>WEB口袋魔方游戏</title>
 
+    <!-- CSS重置表 -->
     <link rel="stylesheet" href="./css/css-comment.css" />
+    <!-- 魔方 -->
     <link rel="stylesheet" href="./css/index.css" />
+    <!-- 背景视频 -->
     <link rel="stylesheet" href="./css/vedio.css" />
+    <!-- 左侧边栏 -->
     <link rel="stylesheet" href="./css/left.css" />
-    <link rel="stylesheet" href="./css/discribe.css" />
-    <link rel="stylesheet" href="./css/record.css" />
+    <!-- 钟表 -->
     <link rel="stylesheet" href="./css/clock.css" />
+    <!-- 右侧新闻公告 -->
+    <link rel="stylesheet" href="./css/discribe.css" />
+    <!-- 顶部记录 -->
+    <link rel="stylesheet" href="./css/record.css" />
+    <!-- 计时器 -->
+    <link rel="stylesheet" href="./css/timer.css" />
   </head>
   <body>
     <!-- 背景视频 -->
@@ -51,9 +60,13 @@
       </div>
     </div>
     <!-- 复原用时 -->
-    <a href="./record.html" class="record"
-      >个人最快完成纪录： 0 小时 5 分 22 秒，继续加油！</a
-    >
+    <a href="./record.html" class="record">
+      个人最快完成纪录：5 分 22 秒 33毫秒，继续加油！
+    </a>
+    <!-- 计时器 -->
+    <div class="timer">
+      用时：<span class="showTime">00 分 00 秒 00 毫秒</span>
+    </div>
     <!-- 右上按钮组 -->
     <div class="controls">
       <div class="button-wrapper">
@@ -66,7 +79,8 @@
         <button type="button" class="fullScreen">全屏展示</button>
         <button type="button" class="scrambler">打乱魔方</button>
         <button type="button" class="restore">复原界面</button>
-        <button type="button">开始计时</button>
+        <button type="button" class="startBtn">开始计时</button>
+        <button type="button" class="resetBtn">重置计时</button>
       </div>
     </div>
     <!-- 右侧描述栏 -->
@@ -922,6 +936,7 @@
     </div>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/time.js"></script>
+    <script src="./js/timer.js"></script>
     <script src="./js/moment-with-locales.min.js"></script>
     <script src="./js/core-home.js"></script>
     <script src="./js/index.js"></script>

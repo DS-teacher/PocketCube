@@ -1,0 +1,22 @@
+.timer {
+  position: absolute;
+  top: 85px;
+  left: 340px;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+  box-shadow: 0 1px 8px rgba(34, 34, 34, 0.3),
+    inset 0 1px 8px rgba(34, 34, 34, 0.3);
+  cursor: default;
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 0.94;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 52px;
+  padding: 0px 20px;
+  color: #fff;
+}
+
+.timer:hover {
+  box-shadow: 0 2px 10px rgba(34, 34, 34, 0.3),
+    inset 0 2px 10px rgba(34, 34, 34, 0.3);
+  opacity: 1;
+}
