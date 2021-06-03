@@ -3,12 +3,6 @@ body {
   background: #ededed;
 }
 
-.tip {
-  font-size: 20px;
-  margin: 40px auto 50px;
-  text-align: center;
-}
-
 .content {
   overflow: hidden;
   position: absolute;
@@ -20,6 +14,10 @@ body {
   border-radius: 4px;
   box-shadow: 4px 4px 10px #ddd;
   background: #fff;
+}
+
+.content:hover {
+  box-shadow: 4px 4px 12px #bbb;
 }
 
 .form {
