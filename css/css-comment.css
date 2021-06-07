@@ -176,3 +176,7 @@ a:active {
 .clearfix:after {
   clear: both;
 }
+
+textarea:focus {
+  outline: none !important;
+}
