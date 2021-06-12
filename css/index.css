@@ -486,11 +486,6 @@ button[disabled] {
  *    ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚══════╝
  */
 
-.theme-realistic .cube-part-wrapper-112 .cube-part .side.white .sticker {
-  background-image: url("images/rubik-logo.png");
-  background-size: 100% auto;
-}
-
 .theme-realistic .cube-part .side {
   visibility: visible;
   box-shadow: 0 0 2px 0 #3f3f3f inset, 0 0 0 0.3rem #2b2b2b inset;
