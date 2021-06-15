@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/rubik-logo.png" />
+    <title>WEB口袋魔方游戏</title>
+
+    <!-- CSS重置表 -->
+    <link rel="stylesheet" href="./css/css-comment.css" />
+    <!-- 背景视频 -->
+    <link rel="stylesheet" href="./css/vedio.css" />
+    <!-- 左侧边栏 -->
+    <link rel="stylesheet" href="./css/left.css" />
+    <!-- 钟表 -->
+    <link rel="stylesheet" href="./css/clock.css" />
+    <!-- 更新公告 -->
+    <link rel="stylesheet" href="./css/news.css" />
+  </head>
+  <body>
+    <!-- 背景视频 -->
+    <video class="lubik-video" autoplay loop muted>
+      <source
+        class="lubik-source"
+        src="./images/LobbyBg.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <!-- 左侧边栏 -->
+    <div class="left-content">
+      <div class="left-content_header">
+        <a href="./sign.html">
+          <img src="./images/logo.png" alt="logo" />
+        </a>
+        <div class="container">WEB口袋魔方游戏</div>
+      </div>
+      <div class="left-content_body">
+        <div class="date">
+          <!-- 时钟 -->
+          <div class="is-moment">
+            <header class="hero hero-moment">
+              <div class="hero-circle">
+                <div class="hero-face">
+                  <div id="hour" class="hero-hour"></div>
+                  <div id="minute" class="hero-minute"></div>
+                  <div id="second" class="hero-second"></div>
+                </div>
+              </div>
+            </header>
+          </div>
+          <div id="dateTime"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 右上按钮组 -->
+    <div class="controls">
+      <div class="button-wrapper">
+        <button type="button" class="fullScreen">全屏展示</button>
+      </div>
+    </div>
+    <!-- 更新公告 -->
+    <div class="news">
+      <div>实时计算用户输入字数</div>
+      <div class="textarea-wrapper">
+        <div class="textarea-block">
+          <textarea
+            class="textarea-item"
+            placeholder="请输入内容，不超过300字。"
+            maxlength="300"
+            spellcheck="false"
+          ></textarea>
+          <div class="textarea-count">
+            <span class="textareaInput">0</span>/<span class="textareaTotal"
+              >300</span
+            >
+          </div>
+        </div>
+        <button class="content-submit" disabled="false">提交</button>
+      </div>
+    </div>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/time.js"></script>
+    <script src="./js/timer.js"></script>
+    <script src="./js/moment-with-locales.min.js"></script>
+    <script src="./js/core-home.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/news.js"></script>
+  </body>
+</html>
