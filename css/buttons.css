@@ -1,0 +1,66 @@
+/* 右上按钮组 */
+.controls {
+  position: absolute;
+  top: 30px;
+  right: 45px;
+  z-index: 5;
+  cursor: default;
+  width: 300px;
+}
+
+.controls button {
+  float: right;
+  margin: 0 0 15px 20px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button {
+  line-height: 1;
+  padding: 10px 12px;
+  font-size: 10px;
+  background: #4caf50;
+  border: 2px solid #9ee0a0;
+  color: #fff;
+  box-shadow: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-variant: small-caps;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 8px rgba(34, 34, 34, 0.3);
+  opacity: 0.87;
+}
+
+button:focus,
+button:hover {
+  color: #48a770;
+  background: #fff;
+  border-color: #48a770;
+}
+
+button:active {
+  color: #fff;
+  border-color: #48a770;
+  background-color: #48a770;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button.selected {
+  color: #fff;
+  border-color: #48a770;
+  background-color: #48a770;
+}
+
+button[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  opacity: 0.65;
+}

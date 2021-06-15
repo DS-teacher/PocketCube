@@ -3,7 +3,7 @@ $(document).ready(function () {
 
   $(".textarea-item").keyup(function () {
     lenInput = $(this).val().length;
-    if (lenInput > 0 && lenInput <= 300) {
+    if (lenInput >= 0 && lenInput <= 300) {
       $(".textareaInput").html(lenInput);
       $(".content-submit").attr("disabled", false);
     } else {
